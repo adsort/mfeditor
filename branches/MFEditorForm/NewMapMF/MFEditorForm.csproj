@@ -1,0 +1,206 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49BB3C23-2698-4942-B8B4-396542107A5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MFEditor</RootNamespace>
+    <AssemblyName>MFEditor</AssemblyName>
+    <ApplicationIcon>Peach.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classBasic.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formClassSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formClassSet.Designer.cs">
+      <DependentUpon>formClassSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formErr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formErr.Designer.cs">
+      <DependentUpon>formErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLabel.Designer.cs">
+      <DependentUpon>formLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLayerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLayerSet.Designer.cs">
+      <DependentUpon>formLayerSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMapSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMapSet.Designer.cs">
+      <DependentUpon>formMapSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMetadata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMetadata.Designer.cs">
+      <DependentUpon>formMetadata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSymbolSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSymbolSet.Designer.cs">
+      <DependentUpon>formSymbolSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formClassSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formClassSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formErr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLayerSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formLayerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMapSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formMapSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMetadata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formMetadata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSymbolSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formSymbolSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMFEditorLib">
+      <Guid>{5594531E-29A1-4963-B614-A00925D270F0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MFEditorLib">
+      <Guid>{5594531E-29A1-4963-B614-A00925D270F0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Peach.ico" />
+    <None Include="Resources\New.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\FullExtents.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\out_med.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\SaveAs.png" />
+    <None Include="Resources\strawberry.png" />
+    <None Include="Resources\ZoomIn.png" />
+    <None Include="Resources\ZoomLast.png" />
+    <None Include="Resources\ZoomOut.png" />
+    <None Include="Resources\ZoomPan.png" />
+    <None Include="Resources\ZoomPrv.png" />
+    <None Include="Resources\AddData.ICO" />
+    <Content Include="Tomato.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
