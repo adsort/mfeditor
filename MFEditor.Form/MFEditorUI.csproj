@@ -226,7 +226,6 @@
     <None Include="Resources\ZoomPan.png" />
     <None Include="Resources\ZoomPrv.png" />
     <None Include="Resources\AddData.ICO" />
-    <Content Include="图形操作图标-查询统计工具.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
