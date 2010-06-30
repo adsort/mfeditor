@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFEditorUI", "MFEditor.Form\MFEditorUI.csproj", "{49BB3C23-2698-4942-B8B4-396542107A5B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF} = {FC8FAEAC-2707-4C88-B390-1A62FD094CAF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFEditor", "MFEditor\MFEditor.csproj", "{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D0BE297F-F9DA-4FF1-9026-61EE0412472F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49BB3C23-2698-4942-B8B4-396542107A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49BB3C23-2698-4942-B8B4-396542107A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49BB3C23-2698-4942-B8B4-396542107A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49BB3C23-2698-4942-B8B4-396542107A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BE297F-F9DA-4FF1-9026-61EE0412472F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BE297F-F9DA-4FF1-9026-61EE0412472F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BE297F-F9DA-4FF1-9026-61EE0412472F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
