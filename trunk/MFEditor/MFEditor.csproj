@@ -1,0 +1,258 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC8FAEAC-2707-4C88-B390-1A62FD094CAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MFEditor</RootNamespace>
+    <AssemblyName>MFEditor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FusionMap, Version=0.9.3609.39822, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\fusionmap\FusionGIS\Build\FusionMap.dll</HintPath>
+    </Reference>
+    <Reference Include="mapscript_csharp, Version=1.0.3353.20429, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MFVisualizer\trunk\MapServer\mapscript_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Extent.cs" />
+    <Compile Include="Class\EventHandler.cs" />
+    <Compile Include="ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFTextEditor.Designer.cs">
+      <DependentUpon>MFTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\LabelEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\LabelEditorDialog.Designer.cs">
+      <DependentUpon>LabelEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\LayerLabelPropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\LayerLabelPropertyPage.Designer.cs">
+      <DependentUpon>LayerLabelPropertyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\NewClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\NewClassForm.Designer.cs">
+      <DependentUpon>NewClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\IPropertyPage.cs" />
+    <Compile Include="PropertyControl\LayerBasicPropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\LayerBasicPropertyPage.Designer.cs">
+      <DependentUpon>LayerBasicPropertyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\LayerClassesPropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\LayerClassesPropertyPage.Designer.cs">
+      <DependentUpon>LayerClassesPropertyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\LayerDataPropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\LayerDataPropertyPage.Designer.cs">
+      <DependentUpon>LayerDataPropertyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyControl\MetadataPropertyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyControl\MetadataPropertyPage.Designer.cs">
+      <DependentUpon>MetadataPropertyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbols\ColorButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Symbols\ColorSelector.cs" />
+    <Compile Include="Symbols\FillSymbolOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Symbols\FillSymbolOptionsControl.Designer.cs">
+      <DependentUpon>FillSymbolOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbols\IColorSelector.cs" />
+    <Compile Include="Symbols\LineSymbolOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Symbols\LineSymbolOptionsControl.Designer.cs">
+      <DependentUpon>LineSymbolOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbols\OnValueChangedEventHandler.cs" />
+    <Compile Include="Symbols\PointSymbolOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Symbols\PointSymbolOptionsControl.Designer.cs">
+      <DependentUpon>PointSymbolOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbols\SymbolSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolSelectorDialog.Designer.cs">
+      <DependentUpon>SymbolSelectorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LegendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LegendControl.Designer.cs">
+      <DependentUpon>LegendControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.cs">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\Rubberband.cs" />
+    <Compile Include="Utils\Utility.cs" />
+    <Compile Include="Symbols\SymbolOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolOptionsControl.Designer.cs">
+      <DependentUpon>SymbolOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LegendControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\zoomin.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFTextEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\LabelEditorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\LayerLabelPropertyPage.resx">
+      <DependentUpon>LayerLabelPropertyPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\NewClassForm.resx">
+      <DependentUpon>NewClassForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\LayerBasicPropertyPage.resx">
+      <DependentUpon>LayerBasicPropertyPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\LayerClassesPropertyPage.resx">
+      <DependentUpon>LayerClassesPropertyPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\LayerDataPropertyPage.resx">
+      <DependentUpon>LayerDataPropertyPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyControl\MetadataPropertyPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MetadataPropertyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbols\FillSymbolOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FillSymbolOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbols\LineSymbolOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineSymbolOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbols\PointSymbolOptionsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointSymbolOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbols\SymbolSelectorDialog.resx">
+      <DependentUpon>SymbolSelectorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\zoomout.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\zoompan.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbols\SymbolOptionsControl.resx">
+      <DependentUpon>SymbolOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
