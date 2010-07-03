@@ -30,7 +30,7 @@
   <ItemGroup>
     <Reference Include="FusionMap, Version=0.9.3609.39822, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\fusionmap\FusionGIS\Build\FusionMap.dll</HintPath>
+      <HintPath>..\dlls\dependencies\FusionMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
