@@ -31,11 +31,11 @@
   <ItemGroup>
     <Reference Include="FusionMap, Version=0.9.3609.39822, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\fusionmap\FusionGIS\Build\FusionMap.dll</HintPath>
+      <HintPath>..\dlls\dependencies\FusionMap.dll</HintPath>
     </Reference>
     <Reference Include="mapscript_csharp, Version=1.0.3353.20429, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\MFVisualizer\trunk\MapServer\mapscript_csharp.dll</HintPath>
+      <HintPath>..\dlls\mapserver5.6.1\mapscript_csharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
