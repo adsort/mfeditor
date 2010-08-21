@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFEditorUI", "MFEditor.Form\MFEditorUI.csproj", "{49BB3C23-2698-4942-B8B4-396542107A5B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FC8FAEAC-2707-4C88-B390-1A62FD094CAF} = {FC8FAEAC-2707-4C88-B390-1A62FD094CAF}
