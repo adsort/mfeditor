@@ -1,4 +1,10 @@
-// Copyright 2008, 2009 - WanliYun (http://code.google.com/p/mfeditor/)
+// Copyright 2008, 2010 - http://code.google.com/p/mfeditor/
+//
+// Author:   WanliYun 
+// Email:    wanliyun2009@gmail.com
+// QQ Group: 81979380
+// Blog:     http://blog.csdn.net/wanliyun2009
+//
 //
 // This file is part of MFEditor.
 // MFEditor is free software; you can redistribute it and/or modify
@@ -14,7 +20,6 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with MFEditor; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
-
 
 using System;
 using System.Collections.Generic;
