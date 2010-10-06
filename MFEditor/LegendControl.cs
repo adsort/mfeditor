@@ -1,9 +1,9 @@
-// Copyright 2008, 2009 - http://code.google.com/p/mfeditor/
+// Copyright 2008, 2010 - http://code.google.com/p/mfeditor/
 //
 // Author:   WanliYun 
 // Email:    wanliyun2009@gmail.com
 // QQ Group: 81979380
-// Homepage: http://code.google.com/p/mfeditor/
+// Blog:     http://blog.csdn.net/wanliyun2009
 //
 //
 // This file is part of MFEditor.
@@ -168,6 +168,8 @@ namespace MFEditor.Control
         private void AddLayerNode(layerObj layer, TreeNode layersnode,int index)
         {
             if ((layer == null) || (layersnode == null)) return;
+
+            
 
             TreeNode layerNode = new TreeNode();
             layerNode.Text = layer.name;

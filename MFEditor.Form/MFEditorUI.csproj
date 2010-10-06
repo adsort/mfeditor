@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{49BB3C23-2698-4942-B8B4-396542107A5B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -38,7 +38,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dlls\dependencies\FusionMap.dll</HintPath>
     </Reference>
-    <Reference Include="mapscript_csharp, Version=1.0.3353.20429, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=x86">
+    <Reference Include="mapscript_csharp, Version=1.0.3678.43012, Culture=neutral, PublicKeyToken=80087771edd02926, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dlls\mapserver5.6.1\mapscript_csharp.dll</HintPath>
     </Reference>
