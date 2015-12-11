@@ -1,0 +1,2 @@
+This is a WYSIWYG mapfile editor base on Mapserver csharp mapscript. It runs on Windows and supports all features Mapserver providing based on the utilities of Mapserver. This version is compatible with the latest release of Mapserver 5.4.0.
+There MUST exist some problems for this release candidate edition, please don't hesitate to [mailto:wanliyun2009@google.com](mailto:wanliyun2009@google.com).
